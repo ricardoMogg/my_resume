@@ -48,17 +48,14 @@
   
 <!-- Page Contents -->
 <div class="pusher">
-    <a class="toc item mobile" style="position:fixed;top:10px;z-index:10;font-size:2em;color:white;">
-      <i class="sidebar icon"></i>
-    </a>
-  <div class="ui four column grid">
+  
     
     <section id="home" class="home ui segment computer only sixteen wide column " style="position:fixed;">
       <ng-include src="'app/main/templates/home.tmpl.html'"/>
     </section>
     
-    
-    <section  class="home ui segment tablet only mobile only medium  sixteen wide column ">
+   <div class="ui grid"> 
+    <section  class="home ui segment tablet only sixteen wide mobile only sixteen wide column ">
       <ng-include src="'app/main/templates/home.tmpl.html'"/>
     </section>
   </div>

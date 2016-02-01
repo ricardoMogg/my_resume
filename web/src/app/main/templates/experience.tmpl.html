@@ -50,4 +50,20 @@
   </div>
 </div>
 
-
+<script>
+  $(document).ready(function(){
+    $('.work.technogi').fadeIn(100);
+    $('.top-work-menu .item').click(function(){
+      $('.top-work-menu .item').removeClass('selected');
+      $(this).addClass('selected');
+      $(' .work').hide();
+      $('.work.'+$(this).attr('data')).fadeIn(100);
+    });
+    $('.side-work-menu .item').click(function(){
+      $('.side-work-menu .item').removeClass('selected');
+      $(this).addClass('selected');
+      $('.work').hide();
+      $('.work.'+$(this).attr('data')).fadeIn(100);
+    });
+  });
+</script>

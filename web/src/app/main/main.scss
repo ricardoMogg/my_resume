@@ -22,6 +22,14 @@ $blue:#3498DB;
   top:1000vh;
   height:102vh;
 }
+
+#education-lg{
+  .image{
+     max-height:50px;
+  height:50px;
+  }
+ 
+}
 section.ui.segment{
   //min-height:102vh;
   min-height:99vh;
@@ -33,6 +41,9 @@ section.ui.segment{
   margin-bottom:0;
   margin-top:0;
   &.home{
+    width:100%;
+    margin:none;
+    padding:none;
     &.computer{
       height:100vh;
       margin-top:0;
@@ -127,16 +138,18 @@ section.ui.segment{
         content: '';
         display: inline-block;
         height: 100%;
+        
         vertical-align: middle;
         margin-right: -0.25em; /* Adjusts for spacing */
       }
       .image{
-        max-height:100px;
-        height:100px;
+        min-height:150px;
+        height:200px;
         min-height:100px;
         text-align: center;
         width:100%;
          white-space: nowrap;
+        overflow:hidden;
         img{
           display: inline-block;
           vertical-align: middle;
