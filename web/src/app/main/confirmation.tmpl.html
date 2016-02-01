@@ -1,0 +1,36 @@
+<md-dialog aria-label="Mango (Fruit)"  ng-cloak>
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Confirmación</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="cancel()">
+          <ng-md-icon icon="close" style="fill:white" size:"20px"></ng-md-icon> 
+        </md-button>
+      </div>
+    </md-toolbar>
+    
+    <md-dialog-content>
+      
+      <div class="md-dialog-content">
+        Proporcionanos tu correo electrónico para enviarte tu cotización
+        <div layout="row">
+          <md-input-container flex>
+            <label>Correo electrónico</label>
+            <input ng-model="user.email" type="email" required>
+          </md-input-container>
+        </div>
+        
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <md-button ng-click="cancel()" class="md-warn">
+       Cancelar
+      </md-button>
+      <md-button ng-disabled="!user.email" ng-click="answer(user.email)" style="margin-right:20px;">
+        Aceptar
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>
